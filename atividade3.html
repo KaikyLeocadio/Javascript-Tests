@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = parseFloat(prompt("Insira seu primeiro número aqui:"));
+        let num2 = parseFloat(prompt("Insira seu segundo número aqui:"));
+        let num3 = parseFloat(prompt("Insira seu terceiro número aqui:"));
+
+        if (num1 > num2 && num1 > num3) {
+            document.write("O maior valor é: " + num1);
+        } else if (num2 > num1 && num2 > num3) {
+            document.write("O maior valor é: " + num2);
+        } else {
+            document.write("O maior valor é: " + num3);
+        }
+    </script>
+</body>
+</html>

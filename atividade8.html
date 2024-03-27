@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let total = 0; 
+        let contagem = 0;
+          for (let X = 1; X <= 4; X++) {
+        let numero = parseFloat(prompt("Digite o " + X + "º número:"));
+        if (numero > 0 && numero < 10) { 
+        total += numero;         
+        contagem++;
+        } 
+        } if (contagem === 4) {
+        let media = total / contagem; 
+        if (media > 5) { 
+        alert("Você passou no teste!");     
+        } else {
+        alert("Tente novamente.");     
+        }
+        }
+    </script>
+</body>
+</html>

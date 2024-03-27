@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let soma = 0;
+        let numerosInformados = "";
+        for (let x = 1; x <= 6; x++) {
+        let numero = parseInt(prompt("Digite o " + x + "º número:"));
+        numerosInformados += numero;     if (x < 6) {
+        numerosInformados += ", ";
+        } if (numero < 72) {
+        soma += numero;     
+        } 
+        }  
+        document.write("Números informados: " + numerosInformados + "<br>"); 
+        document.write("A soma dos números inferiores a 72 é: " + soma);
+    </script>
+</body>
+</html>
